@@ -2,7 +2,7 @@
 
 This project allows you to control the brightness and color of an RGB LED connected to a Raspberry Pi using a rotary encoder. You can adjust the brightness of each color channel (Red, Green, Blue) individually, and the RGB LED will display the combined color based on the current settings. Pressing the button on the rotary encoder will switch between colors (Red, Green, Blue) for individual brightness adjustment.
 
-![Circuit Diagram](circuit_image.jpg) <!-- Link or upload the image of your circuit here -->
+
 
 ## Features
 - Adjust individual brightness levels of Red, Green, and Blue channels using a rotary encoder.
@@ -36,6 +36,11 @@ Refer to the image above to see the complete wiring diagram. The RGB LED and rot
 To run this script, you need the following Python library:
 - `rpi-lgpio` - The GPIO library for Raspberry Pi.
 
+You should work in virtual environment. Run:
+`bash
+python -m venv venv
+source venv/bin/activate`
+
 You can install the library by running:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt```
